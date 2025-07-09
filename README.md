@@ -34,18 +34,19 @@ Install Angular CLI globally if not installed:
 
 Frontend Project complete setup : 
 
-1. git clone git@github.com:abid1505/yottube_clone.git   //for linux machine 
-2. git clone https://github.com/abid1505/yottube_clone.git  //for windows machine
+1. git clone git@github.com:ashpak0608/youtube_clone.git            //for linux machine 
+2. git clone https://github.com/ashpak0608/youtube_clone.git        //for windows machine
 
 3. cd youtube
 
 4. npm install -y
 
-5. npm install -g @angular/cli   //optional if not installed with package.json
+5. npm install -g @angular/cli                                 //optional if not installed with package.json
 
-6. ng serve     // to run the project frontend
+6. ng serve                                                   // to run the project frontend
 
-7.  http://localhost:4200/     // bydefault it will hit this project
+7.  http://localhost:4200/                                  // bydefault it will hit this url
+
 
 
 Backend project setup : 
@@ -54,9 +55,9 @@ Backend project setup :
 
 Open your .env file in the backend folder.
 
-Update DATABASE_URL with your MySQL/MariaDB credentials. Example:
+Update "DATABASE_URL" with your MySQL/MariaDB credentials. Example:
 
-DATABASE_URL="mysql://username:password@localhost:3306/databasename"
+DATABASE_URL="mysql://username:password@localhost:3306/databasename"        //if the .env file is not present generate using command "npx prisma init".
 
 Replace:
 
@@ -67,11 +68,11 @@ password with your DB password
 databasename with your database (e.g. logindata)
 
 
-2. npx prisma migrate dev --name init   // Create tables in your database based on your Prisma schema.
+2. npx prisma migrate dev --name init                          // Create tables in your database based on your Prisma schema.
 
-3. node index.js   //this will run the project 
+3. node index.js                                               //this will run the project 
 
-4. http://localhost:3000/                //url will hit this 
+4. http://localhost:3000/                                      //url will hit this 
 
 
 5. Testing the Backend API with Postman
